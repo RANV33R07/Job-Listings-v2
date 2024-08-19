@@ -7,7 +7,7 @@ JOBS=[
         "id":1,
         "title":"Data Analyst",
         "location":"Bengluru, India",
-        "salary":"RS. 10,00,000"
+        "salary":"RS. 20,00,000"
     },
     {
         "id":2,
