@@ -1,9 +1,20 @@
 import sqlalchemy
 from sqlalchemy import create_engine, text
+import os
 
-db_connection_string = "mysql+pymysql://2MV7kAJ8u835cqi.root:qOjWOWxOhLy0Zi86@gateway01.ap-southeast-1.prod.aws.tidbcloud.com/test?charset=utf8mb4"
+db_connection_string = os.environ['DB_CONNECTION_STRING']
 
 engine = create_engine(db_connection_string,
                        connect_args={"ssl": {
                            "ssl_ca": "/isrgrootx1.pem",
                        }})
+
+def load_jobs_from_db():
+    with engine.connect() as conn:
+        result = conn.execution_options(stream_results=True).execute(
+            text("select * from jobs"))
+
+        JOBS = []
+        for row in result.all():
+            JOBS.append(row)
+    return JOBS
