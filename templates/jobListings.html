@@ -1,19 +1,19 @@
 <div id="jobCards">
     <div id="details">
-        <h4 style="margin-bottom: 10px;">{{j[1]}}</h4>
-        <div><b>Location : </b>{{j[2]}}</div>
-        {% if j[3]%}
-        <div><b>Salary : </b>{{j[4] + " "}}</b>{{j[3]}}</div>
+        <h4 style="margin-bottom: 10px;">{{j['title']}}</h4>
+        <div><b>Location : </b>{{j['location']}}</div>
+        {% if j['salary']%}
+        <div><b>Salary : </b>{{j['currency'] + " "}}</b>{{j['salary']}}</div>
         {% else %}
         <div><b>Salary : </b>{{"N/A"}}</div>
         {% endif %}
         <div style="max-width: 70%; text-align: justify; margin-top: 10px; margin-bottom: 10px;"><b>Roles
                 Responsibilities : </b>
-            <p>{{j[5]}}</p>
+            <p>{{j['responsibilities']}}</p>
         </div>
         <div style="max-width: 70%; text-align: justify; margin-top: 10px; margin-bottom: 10px;"><b>Roles Requirements :
             </b>
-            <p>{{j[6]}}</p>
+            <p>{{j['requirements']}}</p>
         </div>
     </div>
     <a href="mailto:ranveermessi@gmail.com?subject=Appilcation%20for%20{{j['title']}}&body=My%20Name%20%3A%20%3CYour%20Name%20Here%3E%0D%0AMy%20Resume%20Lnk%20%3A%20%3CMy%20resume%20Link%3E%0D%0AMy%20Linkedin%20Link%20%3A%20%3CMy%20Linkedin%20Link%3E"
