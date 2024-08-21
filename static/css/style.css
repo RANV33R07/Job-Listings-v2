@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#main {
+    padding: 0 150px;
+    padding-top: 60px;
+}
+
+h1{
+    font-size: 50px;
+    font-family: "glancyr", sans-serif;
+    text-align: center;
+    margin: 20px 0;
+}
+
+p{
+    font-family: "gilroy", sans-serif;
+    word-spacing: 8px;
+    font-size: 18px;
+}
+
+#banner {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#jobsPosition h4 {
+    margin-bottom: -1px;
+    font-size: 25px;
+    font-family: "glancyr", sans-serif;
+    font-weight: 500;
+    color: dimgrey;
+}
+
+#jobsPosition {
+    font-size: 20px;
+    font-family: "glancyr", sans-serif;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#jobCards {
+    background-color: #E6E6FA;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    position: relative;
+}
+
+#details{
+    height: auto;
+    width: 100%;
+    padding: 20px 20px;
+}
+
+#jobCards a {
+    position: absolute;
+    left: 80%;
+    top: 20px;
+    height: 50px;
+    width: 170px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    font-family: "gilroy", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #D0F0C0;
+}
+
+.buttons {
+    height: 50px;
+    width: 170px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    font-family: "gilroy", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #D0F0C0;
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons:hover {
+    background-color: #b3d9a0;
+    border: 1px solid transparent;
+}
+
+.buttons:active {
+    border: 4px solid #568b3c;
+}
+
+#working {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+#working p {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px 25px;
+    line-height: 1.6;
+    text-align: justify;
+    text-indent: 30px;
+    font-family: 'gilroy', serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #333;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#working img {
+    width: 45%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#footer .buttons {
+    height: 50px;
+    width: 170px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    font-family: "gilroy", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #D0F0C0;
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer .buttons:hover {
+    background-color: #b3d9a0;
+    border: 1px solid transparent;
+}
+
+#footer .buttons:active {
+    border: 4px solid #568b3c;
+}

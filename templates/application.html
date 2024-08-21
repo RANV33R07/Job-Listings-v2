@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="fs-5" id="main">
+        <form action="/jobs/{{j['id']}}/apply" method="post">
+            <div>
+                <label for="Name">Name</label><br>
+                <input style="padding: 0px 10px;" type="text" name="Name" placeholder="Your Name">
+            </div>
+                
+            <div>
+                <label for="Email">Email </label><br>
+                <input style="padding: 0px 10px;" type="text" name="Email" placeholder="xyz@gmail.com">
+            </div>
+
+            <div>
+                <label for="linkedin">Linkedin URL</label><br>
+                <input style="padding: 0px 10px;" type="text" name="linkedin" placeholder="Your Linkedin URL">
+            </div>
+
+            <div>
+                <label for="experience">Experience</label><br>
+                <textarea style="padding: 0px 10px; width: 60%;height: 200px;" name="experience" id=""></textarea>
+            </div>
+
+            <div>
+                <label for="education">Education</label><br>
+                <textarea style="padding: 0px 10px; width: 60%;height: 100px;" name="education" id=""></textarea>
+            </div>
+
+            <div>
+                <label for="resume">Resume URL </label><br>
+                <input style="padding: 0px 10px;" type="text" name="resume" placeholder="xyz@gmail.com">
+            </div>
+
+            <input style="margin: 10px 0px;"  type="submit">
+        </form>
+    </div>
+</body>
+</html>
